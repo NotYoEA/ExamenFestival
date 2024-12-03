@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // MongoDB Connection
-const MONGODB_URI = process.env.MONGODB_URI || process.env.MONGO_URI || "mongodb+srv://[your-connection-string]";
+const MONGODB_URI = process.env.MONGODB_URI || process.env.MONGO_URI || "mongodb+srv://Noya:NotYoEA023@cluster0.e3atf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose
   .connect(MONGODB_URI, {
