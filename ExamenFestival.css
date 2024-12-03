@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 18px;
+    background: linear-gradient(135deg, #2e6fa4 0%, #7a081b 100%);
+    padding-bottom: 50px;
+    color: #333;
+    line-height: 1.6;
+
+}
+.img{
+    margin-left: 80%;
+}
+.h{
+    background-color: rgba(240, 248, 255, 0.598);
+    color: black;
+    width:700px;
+    margin: auto;
+    margin-top: -30px;
+}
+h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#juego {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#juego-adicional, #juego-adicional2, #juego-adicional3, #juego-adicional4, #juego-adicional5, #juego-adicional6, #juego-adicional7, #juego-adicional8, #juego-adicional9, #juego-adicional10 {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#juego-adicional11 {
+    max-width: 1500px;
+    max-height: 900;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.texto-parque {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo suave */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    max-width: 90%; /* Max ancho */
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.texto-parque h3 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2e6fa4; /* Color suave para el título */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.texto-parque p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: justify;
+    color: #444;
+}
+
+.texto-parque p:last-child {
+    margin-bottom: 0; /* Elimina el margen de la última párrafo */
+}
+
+.texto-parque p::before {
+    content: "🌳 "; /* Icono al inicio de cada párrafo */
+    font-size: 18px;
+}
+
+.texto-parque p::after {
+    content: " 🌞"; /* Icono al final de cada párrafo */
+    font-size: 18px;
+}
+
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .texto-parque {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .texto-parque h3 {
+        font-size: 24px;
+    }
+}
+
+
+/* Estilo para las preguntas */
+.contenedor-pregunta {
+    border: 1px solid #ddddddaf;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    background: #ffffff89;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.58);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.contenedor-pregunta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-texto {
+    width: 100%;
+    max-width: 1000px;
+    height: 750px; /* Permite que la altura sea flexible */
+    margin: 40px auto;
+    padding: 0 30px;
+    border: 1px solid #ddddddad;
+    border-radius: 15px;
+    background: #ffffff96;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Asegura que el padding no afecte al ancho */
+    word-wrap: break-word; /* Rompe palabras largas para que no se salgan del contenedor */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contenedor-texto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .contenedor-texto {
+        padding: 0 20px; /* Reduce el padding en pantallas pequeñas */
+        margin: 20px; /* Ajusta el margen */
+    }
+}
+
+
+.contenedor-datos {
+    max-width: 800px;
+    height: auto;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ddddddc9;
+    border-radius: 15px;
+    background: #ffffffab;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.354);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input {
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 15px;
+}
+
+.label2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Estilo para las opciones de respuesta */
+.contenedor-pregunta .opciones {
+    display: flex;           /* Activar el modo flex */
+    flex-direction: row;     /* Alinear los elementos horizontalmente */
+    align-items: center;     /* Alinear los radio buttons y el texto verticalmente */
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+/* Estilo para cada opción (radio button y texto) */
+.contenedor-pregunta .opciones div {
+    display: flex;
+    align-items: center;     /* Centra los radio buttons y el texto */
+    margin-right: 20px;      /* Espacio entre las opciones */
+}
+
+/* Estilo para los radio buttons */
+input[type="radio"] {
+    margin-right: 10px;      /* Espacio entre el círculo y el texto */
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilo para el label de cada opción */
+label {
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    transition: background 0.3s ease, transform 0.2s ease;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+label:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1.02);
+}
+
+/* Estilo para las respuestas correctas */
+.correcta {
+    background-color: #a2e8d7;
+    border-left: 5px solid #28a745;
+}
+
+/* Estilo para las respuestas incorrectas */
+.incorrecta {
+    background-color: #ffb8b8;
+    border-left: 5px solid #dc3545;
+}
+
+.acierto, .no-acierto {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.acierto {
+    background-color: #28a745;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-acierto {
+    background-color: #dc3545;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    width: 200px;
+    margin: 20px auto;
+    display: block;
+    border: none;
+    background: linear-gradient(45deg, #f73b70, #702c2c);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background 0.4s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, hsl(351, 89%, 61%), #e5dfa6);
+    transform: translateY(-5px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+h1 {
+    background-color: #28a745;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 40px;
+}
+
+#resultado {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h4 {
+    position: relative;
+    margin-left: 100px;
+    top: 20px;
+}
+
+h3 {
+    position: relative;
+    margin-left: 100px;
+    top: 20px;
+}
